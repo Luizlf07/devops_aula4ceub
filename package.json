@@ -1,0 +1,17 @@
+{
+    "name": "devops_aula4ceub",
+    "version": "1.0.0",
+    "description": "Atividade pratica - Aula 4 - Integracao Continua e testes automatizados",
+    "main": "src/calculadora.js",
+    "scripts": {
+          "lint": "eslint src/**/*.js",
+          "test": "jest"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+          "eslint": "^8.57.0",
+          "jest": "^29.7.0"
+    }
+}
