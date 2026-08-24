@@ -1,0 +1,31 @@
+name: CI - Lint e Testes
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    name: Lint e Testes
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do codigo
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Rodar Linter (ESLint)
+        run: npm run lint
+
+      - name: Rodar Testes Automatizados (Jest)
+        run: npm test
