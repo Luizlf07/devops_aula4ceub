@@ -1,3 +1,4 @@
+const x = 100; // Variavel sem uso para forcar erro no ESLint
 function somar(a, b) {
     return a + b;
 }
