@@ -1,5 +1,5 @@
 function somar(a, b) {
-  return a - b; // Erro de logica proposital
+  return a + b;
 }
 
 function subtrair(a, b) {
